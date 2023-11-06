@@ -1,4 +1,4 @@
-package com.betrybe.agrix.ebytr.staff.entity;
+package com.betrybe.agrix.ebytr.staff.models.entity;
 
 
 import com.betrybe.agrix.ebytr.staff.security.Role;
@@ -14,19 +14,39 @@ import java.util.Objects;
  */
 @Entity
 public class Person {
-
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-
   @Column(unique = true)
   private String username;
-
   private String password;
-
   private Role role;
 
   public Person() {
+  }
+
+
+  /**
+   * Constructor.
+   */
+
+  public Person(Long id, String username, Role role) {
+    this.id = id;
+    this.username = username;
+    this.role = role;
+  }
+
+
+  /**
+   * Constructor.
+   */
+
+
+  public Person(Long id, String username, String password, Role role) {
+    this.id = id;
+    this.username = username;
+    this.password = password;
+    this.role = role;
   }
 
   public Long getId() {

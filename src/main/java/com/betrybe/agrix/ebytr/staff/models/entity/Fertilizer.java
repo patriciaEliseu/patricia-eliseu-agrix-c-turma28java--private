@@ -1,8 +1,8 @@
-package com.betrybe.agrix.ebytr.staff.models.entities;
+package com.betrybe.agrix.ebytr.staff.models.entity;
 
 
+import com.betrybe.agrix.ebytr.staff.models.entity.Crop;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -95,5 +95,5 @@ public class Fertilizer {
     this.crops = crops;
   }
 
- 
+
 }

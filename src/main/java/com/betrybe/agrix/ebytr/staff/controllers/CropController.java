@@ -3,15 +3,13 @@ package com.betrybe.agrix.ebytr.staff.controllers;
 import static org.springframework.web.servlet.function.ServerResponse.status;
 
 import com.betrybe.agrix.ebytr.staff.controllers.dto.CropDto;
-import com.betrybe.agrix.ebytr.staff.controllers.dto.FertilizersDto;
-import com.betrybe.agrix.ebytr.staff.models.entities.Crop;
-import com.betrybe.agrix.ebytr.staff.models.entities.Fertilizer;
+import com.betrybe.agrix.ebytr.staff.models.entity.Crop;
+import com.betrybe.agrix.ebytr.staff.models.entity.Fertilizer;
 import com.betrybe.agrix.ebytr.staff.service.CropService;
 import com.betrybe.agrix.ebytr.staff.service.FarmService;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

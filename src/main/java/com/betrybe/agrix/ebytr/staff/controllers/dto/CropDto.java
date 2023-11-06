@@ -1,7 +1,7 @@
 package com.betrybe.agrix.ebytr.staff.controllers.dto;
 
 
-import com.betrybe.agrix.ebytr.staff.models.entities.Crop;
+import com.betrybe.agrix.ebytr.staff.models.entity.Crop;
 import java.time.LocalDate;
 /**
  * record.

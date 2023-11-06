@@ -1,5 +1,6 @@
-package com.betrybe.agrix.ebytr.staff.models.entities;
+package com.betrybe.agrix.ebytr.staff.models.entity;
 
+import com.betrybe.agrix.ebytr.staff.models.entity.Crop;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,10 +9,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import java.util.List;
-import java.util.stream.Collector;
-import org.hibernate.annotations.ManyToAny;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 
 /**

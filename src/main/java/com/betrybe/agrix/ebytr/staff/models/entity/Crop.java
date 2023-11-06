@@ -1,4 +1,4 @@
-package com.betrybe.agrix.ebytr.staff.models.entities;
+package com.betrybe.agrix.ebytr.staff.models.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -64,7 +64,7 @@ public class Crop {
     this.fertilizers = fertilizers;
   }
 
-  
+
   public Crop(
       Optional<Crop> crop,
       String name

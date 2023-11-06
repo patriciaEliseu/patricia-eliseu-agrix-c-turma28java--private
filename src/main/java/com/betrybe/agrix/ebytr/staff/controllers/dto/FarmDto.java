@@ -1,6 +1,6 @@
 package com.betrybe.agrix.ebytr.staff.controllers.dto;
 
-import com.betrybe.agrix.ebytr.staff.models.entities.Farm;
+import com.betrybe.agrix.ebytr.staff.models.entity.Farm;
 
 /**
  * record.

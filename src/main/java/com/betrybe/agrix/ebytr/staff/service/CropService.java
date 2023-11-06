@@ -2,10 +2,10 @@ package com.betrybe.agrix.ebytr.staff.service;
 
 import com.betrybe.agrix.ebytr.staff.controllers.CropNotFoundException;
 import com.betrybe.agrix.ebytr.staff.controllers.FertilizerNotFoundExeception;
-import com.betrybe.agrix.ebytr.staff.models.entities.Crop;
-import com.betrybe.agrix.ebytr.staff.models.entities.Fertilizer;
-import com.betrybe.agrix.ebytr.staff.models.repositories.CropRepository;
-import com.betrybe.agrix.ebytr.staff.models.repositories.FertilizerRepository;
+import com.betrybe.agrix.ebytr.staff.models.entity.Crop;
+import com.betrybe.agrix.ebytr.staff.models.entity.Fertilizer;
+import com.betrybe.agrix.ebytr.staff.models.repository.CropRepository;
+import com.betrybe.agrix.ebytr.staff.models.repository.FertilizerRepository;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;

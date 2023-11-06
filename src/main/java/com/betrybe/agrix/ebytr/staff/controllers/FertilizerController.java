@@ -2,7 +2,7 @@ package com.betrybe.agrix.ebytr.staff.controllers;
 
 
 import com.betrybe.agrix.ebytr.staff.controllers.dto.FertilizersDto;
-import com.betrybe.agrix.ebytr.staff.models.entities.Fertilizer;
+import com.betrybe.agrix.ebytr.staff.models.entity.Fertilizer;
 import com.betrybe.agrix.ebytr.staff.service.CropService;
 import com.betrybe.agrix.ebytr.staff.service.FertilizerService;
 import java.util.List;

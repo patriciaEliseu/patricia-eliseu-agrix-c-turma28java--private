@@ -1,10 +1,9 @@
 package com.betrybe.agrix.ebytr.staff.service;
 
 
-import com.betrybe.agrix.ebytr.staff.controllers.dto.FertilizersDto;
-import com.betrybe.agrix.ebytr.staff.models.entities.Fertilizer;
-import com.betrybe.agrix.ebytr.staff.models.repositories.CropRepository;
-import com.betrybe.agrix.ebytr.staff.models.repositories.FertilizerRepository;
+import com.betrybe.agrix.ebytr.staff.models.entity.Fertilizer;
+import com.betrybe.agrix.ebytr.staff.models.repository.CropRepository;
+import com.betrybe.agrix.ebytr.staff.models.repository.FertilizerRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
