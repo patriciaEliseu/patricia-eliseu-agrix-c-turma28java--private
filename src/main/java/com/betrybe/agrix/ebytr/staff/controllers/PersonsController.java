@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping(value = "/persons")
+@RequestMapping("/persons")
 public class PersonsController {
   private PersonService personService;
 

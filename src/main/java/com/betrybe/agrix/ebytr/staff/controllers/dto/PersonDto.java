@@ -17,7 +17,7 @@ public record PersonDto(
 
 
   public Person toPerson() {
-    return new Person(id, username, role);
+    return new Person(id, username, password, role);
   }
 
 

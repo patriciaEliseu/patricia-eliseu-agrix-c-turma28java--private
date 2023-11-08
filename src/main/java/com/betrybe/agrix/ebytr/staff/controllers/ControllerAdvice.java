@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @org.springframework.web.bind.annotation.ControllerAdvice
 public class ControllerAdvice {
 
-  @ExceptionHandler(RuntimeException.class)
+  @ExceptionHandler({
+      CropNotFoundException.class,
+      CustomError.class,
+      FertilizerNotFoundExeception.class})
   public ResponseEntity<String> handleException(RuntimeException error) {
 
     return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error.getMessage());
@@ -26,5 +29,9 @@ public class ControllerAdvice {
     return ResponseEntity.status(500).body(responseDto);
   }
 
-
+  @ExceptionHandler(RuntimeException.class)
+  public ResponseEntity<ResponseDto> handleSecurity(RuntimeException error) {
+    ResponseDto responseDto = new ResponseDto(null, error.getMessage());
+    return ResponseEntity.status(403).body(responseDto);
+  }
 }
